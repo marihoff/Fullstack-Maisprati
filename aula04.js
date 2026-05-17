@@ -1,3 +1,17 @@
+// Aula 04 - Estruturas de Controle: Condicionais - Parte I
+
+//links
+// Operadores (Parte1) - Curso JavaScript #07
+//https://www.youtube.com/watch?v=hZG9ODUdxHo
+
+//Variáveis e Tipos Primitivos - Curso JavaScript #05
+//https://www.youtube.com/watch?v=Vbabsye7mWo
+
+//Condições (Parte 1) - Curso JavaScript #11
+//https://www.youtube.com/watch?v=cOdG4eACN2A
+
+
+
 // Faça um programa que solicite ao usuario a inserção de dois valores (um de cada vez) e que mostre para eles duas opções: 1- somar ou 2- subtrair
 
 let valor1 = parseFloat(prompt("Digite o primeiro valor: "))
