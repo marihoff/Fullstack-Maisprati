@@ -1,0 +1,62 @@
+// Aula 19 - Revisão Flexbox + Box Model e Posicionamento
+
+// links importantes
+
+// 13- flexbox.html
+
+// 14 - posix.html
+
+// 15 - boxmodel.html
+
+// https://flexboxfroggy.com/?authuser=0
+
+// https://curso.dev/show?authuser=0
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxmodel</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: lightgray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .demo-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="demo-section">
+        <h2>conteudo</h2>
+        <h2>unidades de medidas</h2>
+    </section>
+
+        <section class="demo-section">
+            <div>
+                <img src="https://lojavirus.fbitsstatic.net/img/p/tenis-nike-air-force-1-07-black-white-dv0788-001-74665/310447-5.jpg?w=1200&h=1200&v=202505081545" alt="Tenis">
+                <h3>tenis</h3>
+                <p>tenis de corrida</p>
+                <p>R$ 299,90</p>
+                <button>Comprar</button>
+            </div>
+        </section>
+</body>
+</html>
