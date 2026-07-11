@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="../components/site-header.js" defer></script>
+    <script src="../components/site-footer.js" defer></script>
+</head>
+<body>
+    <site-header></site-header>
+    <main class="auth"></main>
+        <form id="form-cadastro"
+        class="formulario">
+            <h1>Cadastro</h1>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required>
+
+            <div class=""id="endereco-container">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" readonly>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+    <site-footer></site-footer>
+</body>
+</html>
