@@ -1,0 +1,48 @@
+// Aula 31 - To-do list com React
+
+// primeiro usa o comando do Vite para criar o projeto React
+
+// npm create vite@latest 
+
+// depois entra na pasta do projeto e instala as dependências
+
+// Seleciona framework React, TypeScript, e o gerenciador de pacotes npm
+
+
+import { useState } from 'react';
+
+function App() {
+  const [todos, setTodos] = useState([]);
+  {
+    id: 1,
+    text: 'Estudar React',
+    status: 'incomplete',
+  }
+  {
+    id: 2,
+    text: 'Fazer exercícios',
+    status: 'incomplete',
+  }
+  {
+    id: 3,
+    text: 'Ler documentação',
+    status: 'incomplete',
+  }
+
+    return (
+    <div className="App">
+      <h1>To-do List</h1>
+      <ul>
+        {todos.map((todo) => (
+          <li key={todo.id}>
+            {todo.text} - {todo.status}
+          </li>
+        ))}
+      </ul>
+      <button onClick={() => setTodos([...todos, { id: todos.length + 1, text: 'Nova tarefa', status: 'incomplete' }])}>
+        Adicionar Tarefa
+        </button>
+    </div>
+  );
+}
+

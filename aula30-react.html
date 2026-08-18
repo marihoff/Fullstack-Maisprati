@@ -1,0 +1,31 @@
+// Aula 30 - Introdução ao React e Configuração do Ambiente de Desenvolvimento
+
+// React é uma biblioteca JavaScript para construção de interfaces de usuário, desenvolvida pelo Facebook. Ele permite criar componentes reutilizáveis e gerenciar o estado da aplicação de forma eficiente.
+
+// Para começar a utilizar o React, é necessário configurar o ambiente de desenvolvimento. Existem várias maneiras de fazer isso, mas uma das mais comuns é utilizando o Create React App, que é uma ferramenta oficial do React para criar aplicações rapidamente.
+
+// React https://react.dev/
+
+// Vai em criar um app reack do zero e vai ir em Vite
+
+// O vite é uma ferramenta de build que permite criar projetos React de forma rápida e eficiente, com suporte a hot module replacement e outras funcionalidades modernas.
+
+// npm create vite@latest comando no terminal 
+
+// Porque usar o React? O React é uma biblioteca JavaScript usada principalmente para criar interfaces de usuário (front-end), especialmente aplicações web interativas.
+
+// JavaScript é uma linguagem de programação. React é uma biblioteca construída usando JavaScript.
+
+import { userState } from 'react';
+function App() {
+  const [count, setCount] = userState(0);
+
+  return (
+  <div className="App">
+    <h1>Hello React</h1>
+    <p>Count: {count}</p>
+    <button onClick={() => setCount(count + 1)}>
+      Increment
+    </button>
+  </div>
+);
